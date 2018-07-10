@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>REST MVC</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+    <div class=" container-fuild jumbotron bg-transparent">
+        <div id="root"></div>
+
+        <div id="userStatusArea"></div>
+    </div>
+    <div class="container" id="welcome">
+        <h1>*_*_*_*_*_Welcome_*_*_*_*_*</h1>
+        <hr>
+        <hr>
+        <h2 class="text-center mb-4">Who are you?</h2>
+        <div class="row text-center">
+            <div class="col-5">
+                <button class="btn btn-primary btn-lg px-5" id="admin">Admin</button>
+            </div>
+            <div class="col-2 mt-2">
+                <h5>Or</h5>
+            </div>
+            <div class="col-5">
+                <button class="btn  btn-primary btn-lg px-5" id="user">User</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editModal" role="dialog" aria-hidden="true" aria-labelledby="exampleModalLabel" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Your Contact:</h5>
+                    <button class="close" data-dismiss="modal" type="button" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="col-form-label" for="editName">Name:</label>
+                            <input class="form-control" id="editName" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="editPhone">Phone :</label>
+                            <input class="form-control" id="editPhone" type="text">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" id="saveEditBtn">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="mt-5">sani&copy; copyright allreseved</p>
+    <!-- <button id="addContactBtn" class="btn
+        btn-success">ADD</button> -->
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#searchModal">
+        Launch demo modal
+    </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title ml-auto" id="exampleModalLabel">*****************</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fa fa-address-card px-3" style="font-size: 25px;" aria-hidden="true"></i>
+                            <h2 id="serachContactName"></h2>
+                            <h3 id="serachContactPhone"></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Call</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
